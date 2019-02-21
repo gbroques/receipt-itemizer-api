@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#e53935">
+    <title>Receipt Itemizer</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+    <section class="first-section section">
+        <div>
+            <div style="width: 100%; margin-bottom: 2rem;">
+                <h1 class="heading">Receipt Itemizer</h1>
+                <p>
+                    A dead simple REST API to itemize paper receipts.
+                </p>
+            </div>
+            <div style="width: 100%; display: flex; flex-direction: row; align-items: center">
+                <div style="width: 435px; height: 464px; overflow-y: hidden; margin-right: 3rem">
+                    <img class="image" style="border-radius: 4px;" src="receipt-with-bounding-boxes.jpg" alt="Receipt with Bounding Boxes">
+                </div>
+                <pre style="background: #444; border-radius: 4px; margin: 0; padding: 1rem; font-size: 0.75rem; min-width: 435px"><code>{
+    "store": "Costco",
+    "items": [
+        {
+            "name": "506950 HALF HALF",
+            "price": "5.79"
+        },
+        {
+            "name": "506950 HALF HALF",
+            "price": "5.79"
+        },
+        {
+            "name": "675153 KALE SALAD",
+            "price": "5.49"
+        },
+        {
+            "name": "1172471 IRISH BUTTER",
+            "price": "10.99"
+        }
+    ]
+    "subtotal": "28.06",
+    "tax": "1.36",
+    "total": "29.42",
+}</code></pre>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <h2 class="heading">Find out More</h2>
+        <p>
+            Subscribe for updates on the project, and early access.
+        </p>
+        <form action="https://github.us20.list-manage.com/subscribe/post?u=cf417851f601fa9714402c338&amp;id=0c0b0ed2ef" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <input type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="email address" required>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_cf417851f601fa9714402c338_0c0b0ed2ef" tabindex="-1" value=""></div>
+            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">
+        </form>
+    </section>
+    <footer class="footer">&copy; Receipt Itemizer 2019</footer>
+</body>
+</html>
