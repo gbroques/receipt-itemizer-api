@@ -75,6 +75,23 @@ html, body, p, ul, ol, h1, h2, h3, h4, h5, h6 {
         justify-content: center;
     }
     .receipt-conversion-container div:first-child {
+        height: auto !important;
+        margin-bottom: 5rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .section:first-child {
+        text-align: center;
+    }
+    .section:first-child p {
+        margin: 0 auto;
+    }
+    .receipt-conversion-container {
+        justify-content: center;
+    }
+    .receipt-conversion-container div:first-child {
+        height: auto !important;
         margin-bottom: 5rem;
     }
 }
@@ -180,10 +197,21 @@ html, body, p, ul, ol, h1, h2, h3, h4, h5, h6 {
 }
 
 @media only screen and (max-width: 924px) {
+    .arrow,
+    .arrow:before {
+        left: initial;
+    }
+
     .arrow {
         margin: 0px 0px 0px 0px;
         -webkit-transform: rotate(45deg);
         transform: rotate(45deg);
+      } 
+}
+
+@media only screen and (max-width: 450px) {
+    .arrow {
+        margin: -48px 0px 0px 0px;
       } 
 }
 
