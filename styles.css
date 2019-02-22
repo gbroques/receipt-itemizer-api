@@ -150,10 +150,11 @@ html, body, p, ul, ol, h1, h2, h3, h4, h5, h6 {
     padding: 10px;
     border: 1px solid #999;
     margin-bottom: 10px;
+    transition: box-shadow 250ms ease-in-out;
 }
 
 #mce-EMAIL:focus{
-    outline:none;
+    outline: none;
     box-shadow: 0 0 4px #e53935;
 }
 
