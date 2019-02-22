@@ -41,14 +41,6 @@ html, body, p, ul, ol, h1, h2, h3, h4, h5, h6 {
     padding: 1rem 1rem 4rem;
 }
 
-@media only screen and (min-width: 480px) {
-    .section:first-child {
-        flex-direction: row;
-        justify-content: center;
-        text-align: left;
-    }
-}
-
 .section:first-child {
     color: white;
     background: #d32f2f;  /* fallback for old browsers */
@@ -59,8 +51,32 @@ html, body, p, ul, ol, h1, h2, h3, h4, h5, h6 {
     margin-bottom: 2rem;
     flex-direction: row;
     justify-content: center;
-    text-align: left;
     flex-wrap: wrap;
+    text-align: left;
+}
+
+.receipt-conversion-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center
+}
+
+@media only screen and (max-width: 924px) {
+    .section:first-child {
+        text-align: center;
+    }
+    .section:first-child p {
+        margin: 0 auto;
+    }
+    .receipt-conversion-container {
+        justify-content: center;
+    }
+    .receipt-conversion-container div:first-child {
+        margin-bottom: 5rem;
+    }
 }
 
 .section:first-child p {
@@ -139,4 +155,59 @@ html, body, p, ul, ol, h1, h2, h3, h4, h5, h6 {
 
 #mc-embedded-subscribe:hover {
     background: #d32f2f;
+}
+
+/**
+ * Arrow
+ */
+
+.arrow,
+.arrow:before {
+  position: absolute;
+  left: 50%;
+}
+
+.arrow {
+  width: 24px;
+  height: 24px;
+  margin: 0px 0px 0px -16px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  border-left: none;
+  border-top: none;
+  border-right: 2px #fff solid;
+  border-bottom: 2px #fff solid;
+}
+
+@media only screen and (max-width: 924px) {
+    .arrow {
+        margin: 0px 0px 0px 0px;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+      } 
+}
+
+.arrow:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  margin: -10px 0 0 -10px;
+  border-left: none;
+  border-top: none;
+  border-right: 1px #fff solid;
+  border-bottom: 1px #fff solid;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: arrow;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-10px, -10px);
+  }
 }

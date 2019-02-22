@@ -11,18 +11,19 @@
 </head>
 <body>
     <section class="first-section section">
-        <div>
+        <div style="max-width: 1040px; width: 100%; display: flex; flex-direction: column;">
             <div style="width: 100%; margin-bottom: 2rem;">
                 <h1 class="heading">Receipt Itemizer</h1>
-                <p>
+                <p style="font-size: 1.25rem">
                     A dead simple REST API to itemize paper receipts.
                 </p>
             </div>
-            <div style="width: 100%; display: flex; flex-direction: row; align-items: center">
-                <div style="width: 435px; height: 464px; overflow-y: hidden; margin-right: 3rem">
+            <div class="receipt-conversion-container">
+                <div style="width: 435px; height: 464px; overflow-y: hidden;">
                     <img class="image" style="border-radius: 4px;" src="receipt-with-bounding-boxes.jpg" alt="Receipt with Bounding Boxes">
                 </div>
-                <pre style="background: #444; border-radius: 4px; margin: 0; padding: 1rem; font-size: 0.75rem; min-width: 435px"><code>{
+                <div class="arrow"></div>
+                <pre style="background: #444; border-radius: 4px; margin: 0; padding: 1rem; font-size: 0.75rem; min-width: 435px; text-align: left"><code>{
     "store": "Costco",
     "items": [
         {
