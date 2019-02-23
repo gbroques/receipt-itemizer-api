@@ -186,9 +186,9 @@ html, body, p, ul, ol, h1, h2, h3, h4, h5, h6 {
 }
 
 .arrow {
-  width: 24px;
-  height: 24px;
-  margin: 0px 0px 0px -16px;
+  width: 30px;
+  height: 30px;
+  margin: 0px 0px 0px -24px;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   border-left: none;
@@ -218,8 +218,8 @@ html, body, p, ul, ol, h1, h2, h3, h4, h5, h6 {
 
 .arrow:before {
   content: '';
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   top: 50%;
   margin: -10px 0 0 -10px;
   border-left: none;
@@ -237,6 +237,6 @@ html, body, p, ul, ol, h1, h2, h3, h4, h5, h6 {
   }
   100% {
     opacity: 0;
-    transform: translate(-10px, -10px);
+    transform: translate(-8px, -8px);
   }
 }
