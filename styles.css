@@ -100,12 +100,6 @@ html, body, p, ul, ol, h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0;
 }
 
-.section:nth-child(2n + 3) {
-    color: white;
-    background: #b71c1c;
-    background: radial-gradient(circle at center, #e53935, #93291E);
-}
-
 .section p {
     max-width: 660px;
     margin-bottom: 1rem;
@@ -122,11 +116,6 @@ html, body, p, ul, ol, h1, h2, h3, h4, h5, h6 {
 .image {
     width: 100%;
     height: auto;
-}
-
-.receipt-with-bounding-boxes {
-    max-width: 350px;
-    border-radius: 2px;
 }
 
 .footer {
